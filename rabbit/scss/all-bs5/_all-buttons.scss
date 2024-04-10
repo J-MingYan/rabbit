@@ -1,0 +1,533 @@
+//按鈕顏色
+.btn-text-custom-pink
+{
+    @include button-variant(pink, pink);
+}
+
+.btn-text-custom-b0d6f0
+{
+    @include button-variant(#b0d6f0, #b0d6f0);
+    color: white;
+    &:hover
+    {
+      color: black;
+    }
+    &.active
+    {
+      color: black
+    }
+}
+
+.btn-text-outline-orange
+{
+    @include button-outline-variant(orange ,#fff);
+}
+
+.btn-text-outline-info
+{
+    @include button-outline-variant($info ,$white);
+
+    &.active
+    {
+      box-shadow: 0 5px 3px black;
+    }
+}
+
+// LOGO樣式
+.logo
+{
+  background: url(/images/img/logo.png);
+  width: 120px;
+  height: 100px;
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+//連結樣式清除
+.link-decoration-none
+{
+  text-decoration: none;
+}
+
+//連結滑入樣式
+.all-links_hover
+{
+  position: relative;
+
+  &::after
+  {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    background: $white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s;
+  }
+  &:hover::after
+  {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  &::before
+  {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 100%;
+    height: 5px;
+    background: $white;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .4s;
+  }
+  &:hover::before
+  {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}
+
+//背景置中＋不重複
+.bg-img-cover
+{
+  background-position: center center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+//背景置中靠上＋不重複
+.bg-img-center_top
+{
+  background-position: center top;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+//背景置中靠下＋不重複
+.bg-img-center_bottom
+{
+  background-position: center bottom;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+//背景大小cover＋不重複
+.bg-img-size_cover
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//背景固定
+.bg-attachment-fixed
+{
+  background-attachment: fixed;
+}
+
+//背景漸變
+.bg-dark-gradent
+{
+  background-image: linear-gradient(180deg , rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+//背景模糊
+.backdrop-filter
+{
+    backdrop-filter: blur(3px) !important;
+}
+
+//圖片置中
+.object-fit-cover
+{
+  object-fit: cover;
+}
+
+//圖片縮圖放大
+.img-transform-scale
+{
+  transform: scale(1);
+  transition: .5s;
+}
+.img-transform-scale:hover
+{
+  transform: scale(1.1);
+}
+
+
+//滑入背景顏色效果
+.all-hover
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  // transition: all .5s;
+  &:hover
+  {
+    // background-color: black;
+    background-image: linear-gradient(30deg , rgb(3, 60, 112), rgb(117, 153, 238), rgba(131, 112, 227, 0.455));
+  }
+}
+.all-bg-hover-white
+{
+  cursor: pointer;
+  transition: background-color .5s;
+
+  &:hover
+  {
+    background-color: white !important;
+  }
+}
+
+//滑入文字顏色效果
+.all-text-hover:hover
+{
+  transition: all .7s;
+  color: $white;
+}
+.all-text-hover-pink:hover
+{
+  transition: all .7s;
+  color: pink;
+  cursor: pointer;
+}
+
+//裝飾線
+.all-deco-line
+{
+  padding-left: 1rem;
+  position: relative;
+
+  &::before
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: $info;
+  }
+}
+
+//向下滾動Ｙ軸會有進入進出效果
+//--- 左邊進 ---
+.all-animated-s
+{
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: transform 1.5s;
+}
+.fadeln-s
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+//--- 右邊進 ---
+.all-animated-e
+{
+  opacity: 0;
+  transform: translateX(400px);
+  transition: transform 1.5s;
+}
+.fadeln-e
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+//--- 上邊進 ---
+.all-animated-t
+{
+  opacity: 0;
+  transform: translateY(400px);
+  transition: transform 1.5s;
+}
+.fadeln-t
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+//--- 下邊進 ---
+.all-animated-b
+{
+  opacity: 0;
+  transform: translateY(-400px);
+  transition: transform 1.8s;
+}
+.fadeln-b
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+//向下滾動Ｙ軸會有反轉效果
+.all-animated-x
+{
+  opacity: 0;
+  transform: scaleX(-1);
+  transition: transform 1.5s;
+}
+.fadeln-x
+{
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+
+//響應式關閉效果
+.all-clos
+{
+  // width:  50px;
+  // height: 50px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.all-bar
+{
+  display: block;
+  margin-bottom: 5px;
+  width: 28px;
+  height: 4px;
+  background-color: #d9a0ae;
+
+  transition: .7s;
+
+  user-select: none;
+}
+
+.all-bar:nth-child(1)
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  animation: aaa 0.5s backwards;
+  animation-direction: reverse;
+}
+.all-bar:nth-child(2)
+{
+  transform: translate(0%, -0%);
+  margin-bottom: 5px;
+  animation: bbb 0.5s backwards;
+  animation-direction: reverse;
+}
+.all-bar:nth-child(3)
+{
+  animation: ccc 1s backwards;
+  animation-direction: reverse;
+}
+
+.act .all-bar:nth-child(1)
+{
+//  transform: translate(0% , 0%) rotate(0deg);
+ animation: 0.5s forwards;
+ animation-name: aaaa;
+ animation-duration: 0.5s;
+ animation-iteration-count: 1;
+ animation-delay: 0s;
+}
+.act .all-bar:nth-child(2)
+{
+  // transform: translate(-50% , 0%) rotate(0deg);
+  // background-color: transparent;
+  animation: 0.5s forwards;
+  animation-name: bbbb;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+.act .all-bar:nth-child(3)
+{
+  // transform: translate(0% , 0%) rotate(0deg);
+  animation: 0.5s forwards;
+  animation-name: cccc;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+@keyframes aaa
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(0% , 9px) rotate(0deg)}
+  60% {transform: translate(0% , 9px) rotate(0deg)}
+  100% {transform: translate(0% , 9px) rotate(45deg)}
+}
+@keyframes aaaa
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(0% , 9px) rotate(0deg)}
+  70% {transform: translate(0% , 9px) rotate(0deg)}
+  100% {transform: translate(0% , 9px) rotate(45deg)}
+}
+@keyframes bbb
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(-30% , 0%) rotate(0deg)}
+  70% {transform: translate(-50% , 0%) rotate(0deg)}
+  100% {background-color: transparent}
+}
+@keyframes bbbb
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(-30% , 0%) rotate(0deg)}
+  70% {transform: translate(-50% , 0%) rotate(0deg)}
+  100% {background-color: transparent}
+}
+@keyframes ccc
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(0% , 0%) rotate(90deg)}
+  70% {transform: translate(0% , -9px) rotate(90deg)}
+  100% {transform: translate(0% , -9px) rotate(135deg)}
+}
+@keyframes cccc
+{
+  0% {transform: translate(0% , 0%) rotate(0deg)}
+  50% {transform: translate(0% , 0%) rotate(90deg)}
+  70% {transform: translate(0% , -9px) rotate(90deg)}
+  100% {transform: translate(0% , -9px) rotate(135deg)}
+}
+
+// col-* 外擴 (圖片)
+.images-row
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@include media-breakpoint-up(md)
+{
+  .images-row
+  {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+@include media-breakpoint-up(lg)
+{
+  .images-row
+  {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+
+
+// 響應式高度
+.h-all-md-75
+{
+  height: 75% !important;
+}
+@include media-breakpoint-down(md){
+  .h-all-md-75
+  {
+    height: 100% !important;
+  } 
+}
+@include media-breakpoint-down(lg){
+  .h-all-md-75
+  {
+    height: 100% !important;
+  } 
+}
+
+
+
+// 搭配col-*讓文字區塊出現效果
+.all-text-hover_title
+{
+  background-color: black;
+  opacity: .8;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+  // white-space: nowrap;
+  // overflow: hidden;
+  transition: all .7s;
+}
+.col-md-12:hover .all-text-hover_title, .col-md-6:hover .all-text-hover_title
+{
+  bottom: 0;
+}
+@include media-breakpoint-down(lg)
+{
+  .col-md-12:hover .all-text-hover_title, .col-md-6:hover .all-text-hover_title
+  {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+//標題滑動效果
+.all-links_title
+{
+  position: relative;
+
+  &::after
+  {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: $white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .8s;
+  }
+}
+// 搭配col-*讓區塊出現效果
+.col-md-12:hover .all-links_title::after, .col-md-6:hover .all-links_title::after
+{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+//滑入顯示收尋icons
+.all-hover-divIcons
+{
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .7s;
+}
+.overflow-hidden:hover .all-hover-divIcons
+{
+  opacity: .9;
+}
+//搭配放大圖片效果
+.overflow-hidden:hover .img-transform-scale
+{
+  transform: scale(1.1);
+}
