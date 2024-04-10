@@ -16158,7 +16158,7 @@ button.all-clos:focus {
     padding-top: 70px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .display-5 {
     font-size: 30px;
     letter-spacing: 2.4px;
@@ -17131,7 +17131,7 @@ input.search-input:focus {
   .productCarousel-1 {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    margin-left: 2%;
+    margin-left: 3%;
   }
   .productCarousel-2 {
     -webkit-transform: translateX(0);
@@ -18168,7 +18168,7 @@ footer {
           align-items: flex-end;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .LINK {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -18204,7 +18204,7 @@ footer {
           backface-visibility: hidden;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .fbLink {
     margin-top: 10px;
   }
