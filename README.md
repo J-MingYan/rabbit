@@ -8,7 +8,7 @@
 * jQuery
 * JavaScript
 ## 使用插件
-* [sweet alert](https://sweetalert2.github.io/#download)
+* [Swiper](https://swiperjs.com)
 
 
 
