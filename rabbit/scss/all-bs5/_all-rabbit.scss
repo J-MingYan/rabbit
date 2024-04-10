@@ -117,7 +117,7 @@ button.all-clos:focus
 }
 
 // 圖片下文字
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .display-5
   {
@@ -312,7 +312,7 @@ input.search-input:focus
     height: 230px;
   }
 }
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .Yuanpiao1
   {
@@ -609,7 +609,7 @@ input.search-input:focus
   letter-spacing: 3.2px;
   position: relative;
 }
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .productH1
   {
@@ -699,7 +699,7 @@ input.search-input:focus
   z-index: 9;
 }
 // 手機載具 隱藏
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .productH1::before, .productAcorn1, .productAcorn2, .productShadow
   {
@@ -720,7 +720,7 @@ input.search-input:focus
 {
   margin-bottom: 30px !important;
 }
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .productP
   {
@@ -816,7 +816,7 @@ input.search-input:focus
     margin: 0 auto;
   }
 }
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .productDiv
   {
@@ -872,7 +872,7 @@ input.search-input:focus
   }
 }
 // 產品列表 按鈕 手機時置中
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .productPhoneBtn
   {
@@ -905,7 +905,7 @@ input.search-input:focus
   .productCarousel-1
   {
     transform: translateX(0);
-    margin-left: 2%;
+    margin-left: 3%;
   }
   .productCarousel-2
   {
@@ -1598,7 +1598,7 @@ input.search-input:focus
   text-align: center;
   color: #333;
 }
-@media (max-width:375px)
+@media (max-width:430px)
 {
   .promotionText
   {
@@ -1919,7 +1919,7 @@ footer
   flex-flow: row;
   align-items: flex-end;
 }
-@media (max-width:425px)
+@media (max-width:430px)
 {
   .LINK
   {
@@ -1952,7 +1952,7 @@ footer
   background-repeat: no-repeat;
   backface-visibility: hidden;
 }
-@media (max-width:425px)
+@media (max-width:430px)
 {
   .fbLink
   {
