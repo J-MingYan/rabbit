@@ -16483,7 +16483,7 @@ input.search-input:focus {
     height: 230px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .Yuanpiao1 {
     left: -20%;
     bottom: -4%;
@@ -16765,7 +16765,7 @@ input.search-input:focus {
   position: relative;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .productH1 {
     text-align: center;
   }
@@ -16939,7 +16939,7 @@ input.search-input:focus {
   z-index: 9;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .productH1::before, .productAcorn1, .productAcorn2, .productShadow {
     display: none;
   }
@@ -16956,7 +16956,7 @@ input.search-input:focus {
   margin-bottom: 30px !important;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .productP {
     text-align: center;
     margin-bottom: 0;
@@ -17049,7 +17049,7 @@ input.search-input:focus {
     margin: 0 auto;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .productDiv {
     margin: 0;
   }
@@ -17099,7 +17099,7 @@ input.search-input:focus {
   background: linear-gradient(to left, #f16278 0%, #f17070 30%, #f99261 100%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .productPhoneBtn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17801,7 +17801,7 @@ input.search-input:focus {
   color: #333;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .promotionText {
     text-align: start;
     padding: 0 20px;
